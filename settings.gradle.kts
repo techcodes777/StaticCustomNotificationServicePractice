@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ForeGroundNotificationServicePractice"
+rootProject.name = "NotificationServicePractice"
 include(":app")
  

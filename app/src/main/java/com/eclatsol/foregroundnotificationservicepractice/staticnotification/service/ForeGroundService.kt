@@ -1,4 +1,4 @@
-package com.eclatsol.foregroundnotificationservicepractice.foreground
+package com.eclatsol.foregroundnotificationservicepractice.staticnotification.service
 
 import android.app.Notification
 import android.app.NotificationChannel

@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
 
     <application
         android:allowBackup="true"
@@ -16,7 +18,7 @@
         android:theme="@style/Theme.ForeGroundNotificationServicePractice"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".customnotification.CustomNotificationActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +26,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".staticnotification.MainActivity"
+            android:exported="false" />
 
         <service
-            android:name=".foreground.ForeGroundService"
+            android:name=".staticnotification.service.ForeGroundService"
+            android:exported="false" />
+
+        <service
+            android:name=".customnotification.service.CustomForegroundService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".customnotification.broadcastreceiver.ButtonReceive"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".customnotification.ui.FirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customnotification.ui.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".customnotification.ui.ThirdActivity"
             android:exported="false" />
     </application>
 

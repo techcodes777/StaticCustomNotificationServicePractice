@@ -1,4 +1,4 @@
-package com.eclatsol.foregroundnotificationservicepractice
+package com.eclatsol.foregroundnotificationservicepractice.staticnotification
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -8,7 +8,8 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.eclatsol.foregroundnotificationservicepractice.foreground.ForeGroundService
+import com.eclatsol.foregroundnotificationservicepractice.R
+import com.eclatsol.foregroundnotificationservicepractice.staticnotification.service.ForeGroundService
 
 class MainActivity : AppCompatActivity() {
 
