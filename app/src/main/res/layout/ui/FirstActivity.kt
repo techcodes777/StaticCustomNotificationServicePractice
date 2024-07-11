@@ -1,8 +1,8 @@
-package com.eclatsol.backgroundservice.ui
+package layout.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.eclatsol.backgroundservice.R
+import com.eclatsol.foregroundnotificationservicepractice.R
 
 class FirstActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
